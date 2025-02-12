@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+span {
+  color: #C80000;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/* header */
+header {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 101;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+header div{
+  display: flex;
+  padding-left: 70px;
+}
+
+header nav {
+  padding-right: 120px;
+}
+
+header h3, #contactUs h3{
+  color: whitesmoke;
+  text-decoration: 3px underline white;
+}
+
+header span, #contactUs span{
+  color: #C80000;
+  text-decoration: 3px underline #C80000;
+}
+
+/* nav */
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Montserrat", serif;
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+
+.button {
+  background-color: #C80000;
+  border: none;
+  margin-left: 30px;
+  padding: 10px 18px;
+  border-radius: 17px;
+}
+
+/* home */
+#home {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url(images/home-steak.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  max-height: 400px; 
+  min-height: 300px;
+  padding: 70px;
+  color: white;
+  z-index: 1;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top left, rgba(1, 1, 0, 1), transparent 100%);
+  z-index: -1;
+}
+
+#home h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+}
+
+#home span {
+  color: #C80000;
+}
+
+.home-button-1 {
+  color: whitesmoke;
+  background-color: #C80000;
+  margin-right: 10px;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.home-button-2 {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+
+/* about us */
+#aboutUs {
+  height: 80vh;
+  background-color: #121212;
+  display: flex;
+  color: white;
+}
+
+.aboutUs-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.aboutUs-1-content {
+  padding: 70px;
+}
+
+.aboutUs-1-content-1 {
+  position: relative;
+}
+
+.aboutUs-1-content-1 img {
+  height: 350px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.aboutUs-1-content-2 {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.aboutUs-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutUs-2-content {
+  width: 70%;
+  margin-left: 15px;
+}
+
+.aboutUs-2-content span {
+  color: #C80000;
+}
+
+.aboutUs-2-content p {
+  line-height: 25px;
+}
+
+.aboutUs-2-content button {
+  background-color: #C80000;
+  color: white;
+  margin-top: 25px;
+  border: none;
+  padding: 9px 17px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* menu */
+#menu {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  padding: 30px;
+}
+
+/* events */
+#events {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  padding: 30px;
+}
+
+/* reservations */
+#reservations {
+  background-color: black;
+  height: 60vh;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.reservation-1 {
+  width: 150%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 90%), 
+              url('images/reservation.png') center/cover no-repeat;
+}
+
+.reservation-2 {
+  background-color: black;
+  width: 80%;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.reservation-2-content {
+  position: absolute;
+  left: -90px;
+}
+
+.reservation-2-content span {
+  color: red;
+}
+
+.reservation-2-content button {
+  background-color: red;
+  color: whitesmoke;
+  margin-top: 25px;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* contact us */
+#contactUs {
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  padding-bottom: 10px;
+}
+
+#contactUs p{
+  font-family: "Montserrat", serif;
+}
+
+.contactUs-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contactUs-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+.contactUs-navigation {
+  margin-left: 70px;
+}
+
+.contactUs-info i {
+  border: 2px solid hsl(0, 100%, 39%);
+  background-color: #C80000;
+  padding: 5px;
+  border-radius: 20px;
+  height: 10px;
+  width: 11px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.contactUs-info div {
+  display: flex;
+  align-items: center;
+}
+
+.contactUs-subscribe {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.contactUs-subscribe input {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 15px;
+  opacity: 0.3;
+  border-radius: 20px;
+  width: 110px;
+}
+
+.contactUs-subscribe button {
+  color: whitesmoke;
+  background-color: #C80000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+
+.contactUs-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+hr {
+  color: gray;
+  background-color: gray;
+  border: none;
+  height: 1px;
+  margin-top: 90px;
+}
+
+.contactUs-footer p{
+  color: gray;
+}
+
