@@ -268,6 +268,8 @@ nav a {
   margin-left: 10px;
 }
 
+
+
 /* events */
 #events {
   background-color: #121212;
@@ -281,8 +283,8 @@ nav a {
 
 .container {
   position: relative;
-  width: 80%; 
-  height: 400px; 
+  width: 80%; /* Adjust based on your layout */
+  height: 400px; /* Adjust based on your layout */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -338,6 +340,12 @@ nav a {
   color: #C80000;
   margin-right: 10px;
 }
+
+
+
+
+
+
 
 /* reservations */
 #reservations {
@@ -481,6 +489,56 @@ hr {
 
 @media (max-width: 767px) {
 
+
+  header nav {
+    padding-right: 70px;
+  }
+
+  #home {
+    padding-top: 60px;
+  }
+
+  #home h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+
+  h1 {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 18px;
+  }
+
+  p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .home-button-1 {
+    background-color: #C80000;
+    padding: 10px 25px;
+    font-size: 8px;
+  }
+  
+  .home-button-2 {
+    background-color: transparent;
+    padding: 8px 13px;
+    font-size: 8px;
+  }
+
+  .aboutUs-1-content-1 img {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .aboutUs-1 {
+    width: 80%;
+    padding: 5px;
+    margin-right: 60px;
+  }
 }
 
 @media (max-width: 575px) {
