@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  color: #F8F9FA;
+  color: white;
 }
 
 h1 {
-  color: #F8F9FA;
+  color: white;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 40px;
@@ -16,32 +16,27 @@ span {
   color: #C80000;
 }
 
-.playfair-display {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.montserrat {
+p, button {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
+p {
+  line-height: 35px;
+}
 
 /* header */
 header {
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   position: fixed;
   z-index: 101;
   display: flex;
   justify-content: space-between;
   height: 60px;
   align-items: center;
-  box-shadow: 0px 0px 30px black;
 }
 
 header div{
@@ -54,8 +49,8 @@ header nav {
 }
 
 header h3, #contactUs h3{
-  color: #F8F9FA;
-  text-decoration: 3px underline #F8F9FA;
+  color: whitesmoke;
+  text-decoration: 3px underline white;
 }
 
 header span, #contactUs span{
@@ -66,12 +61,11 @@ header span, #contactUs span{
 /* nav */
 nav a {
   text-decoration: none;
-  color: #F8F9FA;
+  color: whitesmoke;
   font-family: "Montserrat", serif;
   font-size: 10px;
   margin-left: 15px;
 }
-
 
 .button {
   background-color: #C80000;
@@ -95,7 +89,7 @@ nav a {
   max-height: 400px; 
   min-height: 300px;
   padding: 70px;
-  color: #F8F9FA;
+  color: white;
   z-index: 1;
 }
 
@@ -120,7 +114,7 @@ nav a {
 }
 
 .home-button-1 {
-  color: #F8F9FA;
+  color: whitesmoke;
   background-color: #C80000;
   margin-right: 10px;
   border: none;
@@ -129,9 +123,9 @@ nav a {
 }
 
 .home-button-2 {
-  color: #F8F9FA;
+  color: white;
   background-color: transparent;
-  border: 1px solid #F8F9FA;
+  border: 1px solid white;
   padding: 10px 20px;
   border-radius: 20px;
 }
@@ -139,10 +133,12 @@ nav a {
 
 /* about us */
 #aboutUs {
-  height: 80vh;
+  height: 100%;
   background-color: #121212;
   display: flex;
-  color: #F8F9FA;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .aboutUs-1 {
@@ -183,17 +179,17 @@ nav a {
   margin-left: 15px;
 }
 
-.aboutUs-2-content span {
+.aboutUs-2-content span, .red {
   color: #C80000;
 }
 
 .aboutUs-2-content p {
-  line-height: 25px;
+  line-height: 29px;
 }
 
 .aboutUs-2-content button {
   background-color: #C80000;
-  color: #F8F9FA;
+  color: white;
   margin-top: 25px;
   border: none;
   padding: 9px 17px;
@@ -203,12 +199,73 @@ nav a {
 
 /* menu */
 #menu {
-  background-color: #000000;
+  background-color: black;
   display: flex;
   justify-content: center;
   text-align: center;
-  height: 60vh;
-  padding: 30px;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.carousel {
+  display: flex;
+  margin: 30px 100px 40px 100px;
+  text-align: left;
+}
+
+.carousel-left-1 {
+  width: 100%;
+  background-image: url(images/menu-1.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-right {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 20px;
+}
+
+.carousel-right-container {
+  position: relative;
+}
+
+.carousel-right h2 {
+  justify-content: left;
+}
+
+.carousel-right-content {
+  width: 280px;
+}
+
+.carousel-right-absolute-1 {
+  width: 280px;
+  position: absolute;
+  right: -10px;
+  bottom: -100px;
+}
+
+.carousel-right-absolute-2 {
+  width: 280px;
+  position: absolute;
+  left: 0px;
+  bottom: -250px;
+  background-image: url(images/three.png);
+}
+
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.carousel-button i {
+  font-size: 25px;
+  margin-left: 10px;
 }
 
 /* events */
@@ -217,13 +274,74 @@ nav a {
   display: flex;
   justify-content: center;
   text-align: center;
-  height: 60vh;
-  padding: 30px;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 80%; 
+  height: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 40px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.box {
+  width: 500px;
+  height: 270px;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.left {
+  opacity: 30%;
+  background-image: url(images/events-feast.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Ensure it's below the black box */
+  margin-right: 60px;
+}
+
+.right {
+  opacity: 30%;
+  background-image: url(images/events-night.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Ensure it's below the black box */
+}
+
+.center {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 80%);
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 300px;
+  z-index: 2;
+  box-shadow: 0px 0px 4px #C80000;
+}
+
+.view {
+  display: flex;
+  color: #C80000;
+  margin-right: 10px;
+  margin-top: 2px;
+  align-items: center;
+}
+
+#red {
+  color: #C80000;
+  margin-right: 10px;
 }
 
 /* reservations */
 #reservations {
-  background-color: #121212;
+  background-color: black;
   height: 60vh;
   display: flex;
   width: 100%;
@@ -233,13 +351,13 @@ nav a {
 .reservation-1 {
   width: 150%;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 90%), 
-              url('images/reservation.png') center/cover no-repeat;
+                url('images/reservation.png') center/cover no-repeat;
 }
 
 .reservation-2 {
-  background-color: #121212;
+  background-color: black;
   width: 80%;
-  color: #F8F9FA;
+  color: white;
   display: flex;
   align-items: center;
   position: relative;
@@ -256,7 +374,7 @@ nav a {
 
 .reservation-2-content button {
   background-color: red;
-  color: #F8F9FA;
+  color: whitesmoke;
   margin-top: 25px;
   border: none;
   padding: 9px 15px;
@@ -266,8 +384,8 @@ nav a {
 
 /* contact us */
 #contactUs {
-  background-color: #121212;
-  color: #F8F9FA;
+  background-color: black;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   padding: 70px;
@@ -292,7 +410,7 @@ nav a {
 }
 
 .contactUs-navigation {
-  margin-left: 70px;
+  margin-left: 30px;
 }
 
 .contactUs-info i {
@@ -318,7 +436,7 @@ nav a {
 
 .contactUs-subscribe input {
   background-color: transparent;
-  border: 1px solid #F8F9FA;
+  border: 1px solid white;
   padding: 10px 15px;
   opacity: 0.3;
   border-radius: 20px;
@@ -326,7 +444,7 @@ nav a {
 }
 
 .contactUs-subscribe button {
-  color: #F8F9FA;
+  color: whitesmoke;
   background-color: #C80000;
   border: none;
   padding: 12px 20px;
@@ -352,3 +470,19 @@ hr {
   color: gray;
 }
 
+/* media queries */
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}
