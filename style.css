@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #F8F9FA;
 }
 
 h1 {
-  color: white;
+  color: #F8F9FA;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 40px;
@@ -34,13 +34,14 @@ span {
 /* header */
 header {
   width: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: fixed;
   z-index: 101;
   display: flex;
   justify-content: space-between;
   height: 60px;
   align-items: center;
+  box-shadow: 0px 0px 30px black;
 }
 
 header div{
@@ -53,8 +54,8 @@ header nav {
 }
 
 header h3, #contactUs h3{
-  color: whitesmoke;
-  text-decoration: 3px underline white;
+  color: #F8F9FA;
+  text-decoration: 3px underline #F8F9FA;
 }
 
 header span, #contactUs span{
@@ -65,7 +66,7 @@ header span, #contactUs span{
 /* nav */
 nav a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #F8F9FA;
   font-family: "Montserrat", serif;
   font-size: 10px;
   margin-left: 15px;
@@ -94,7 +95,7 @@ nav a {
   max-height: 400px; 
   min-height: 300px;
   padding: 70px;
-  color: white;
+  color: #F8F9FA;
   z-index: 1;
 }
 
@@ -119,7 +120,7 @@ nav a {
 }
 
 .home-button-1 {
-  color: whitesmoke;
+  color: #F8F9FA;
   background-color: #C80000;
   margin-right: 10px;
   border: none;
@@ -128,9 +129,9 @@ nav a {
 }
 
 .home-button-2 {
-  color: white;
+  color: #F8F9FA;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #F8F9FA;
   padding: 10px 20px;
   border-radius: 20px;
 }
@@ -141,7 +142,7 @@ nav a {
   height: 80vh;
   background-color: #121212;
   display: flex;
-  color: white;
+  color: #F8F9FA;
 }
 
 .aboutUs-1 {
@@ -192,7 +193,7 @@ nav a {
 
 .aboutUs-2-content button {
   background-color: #C80000;
-  color: white;
+  color: #F8F9FA;
   margin-top: 25px;
   border: none;
   padding: 9px 17px;
@@ -202,7 +203,7 @@ nav a {
 
 /* menu */
 #menu {
-  background-color: black;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -222,7 +223,7 @@ nav a {
 
 /* reservations */
 #reservations {
-  background-color: black;
+  background-color: #121212;
   height: 60vh;
   display: flex;
   width: 100%;
@@ -236,9 +237,9 @@ nav a {
 }
 
 .reservation-2 {
-  background-color: black;
+  background-color: #121212;
   width: 80%;
-  color: white;
+  color: #F8F9FA;
   display: flex;
   align-items: center;
   position: relative;
@@ -255,7 +256,7 @@ nav a {
 
 .reservation-2-content button {
   background-color: red;
-  color: whitesmoke;
+  color: #F8F9FA;
   margin-top: 25px;
   border: none;
   padding: 9px 15px;
@@ -265,8 +266,8 @@ nav a {
 
 /* contact us */
 #contactUs {
-  background-color: black;
-  color: whitesmoke;
+  background-color: #121212;
+  color: #F8F9FA;
   display: flex;
   flex-direction: column;
   padding: 70px;
@@ -317,7 +318,7 @@ nav a {
 
 .contactUs-subscribe input {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #F8F9FA;
   padding: 10px 15px;
   opacity: 0.3;
   border-radius: 20px;
@@ -325,7 +326,7 @@ nav a {
 }
 
 .contactUs-subscribe button {
-  color: whitesmoke;
+  color: #F8F9FA;
   background-color: #C80000;
   border: none;
   padding: 12px 20px;
