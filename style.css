@@ -4,6 +4,14 @@
   color: white;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 h1 {
   color: white;
   font-family: "Playfair Display", serif;
@@ -24,13 +32,13 @@ p, button {
 }
 
 p {
-  line-height: 35px;
+  line-height: 35px !important;
 }
 
 /* header */
 header {
-  width: 100%;
   background-color: black;
+  width: 100%;
   position: fixed;
   z-index: 101;
   display: flex;
@@ -51,6 +59,7 @@ header nav {
 header h3, #contactUs h3{
   color: whitesmoke;
   text-decoration: 3px underline white;
+  font-size: 18px;
 }
 
 header span, #contactUs span{
@@ -104,16 +113,11 @@ nav a {
   z-index: -1;
 }
 
-#home h1 {
-  margin-bottom: 40px;
-  font-size: 60px;
-}
-
 #home span {
   color: #C80000;
 }
 
-.home-button-1 {
+.button-red {
   color: whitesmoke;
   background-color: #C80000;
   margin-right: 10px;
@@ -137,8 +141,8 @@ nav a {
   background-color: #121212;
   display: flex;
   color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 80px;
 }
 
 .aboutUs-1 {
@@ -187,16 +191,6 @@ nav a {
   line-height: 29px;
 }
 
-.aboutUs-2-content button {
-  background-color: #C80000;
-  color: white;
-  margin-top: 25px;
-  border: none;
-  padding: 9px 17px;
-  border-radius: 20px;
-  font-size: 12px;
-}
-
 /* menu */
 #menu {
   background-color: black;
@@ -210,24 +204,30 @@ nav a {
 
 .carousel {
   display: flex;
-  margin: 30px 100px 40px 100px;
+  margin: 30px 80px 40px 80px;
   text-align: left;
 }
 
-.carousel-left-1 {
+.carousel-left {
   width: 100%;
-  background-image: url(images/menu-1.JPG);
+  display: flex;
+  justify-content: right;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .carousel-right {
   width: 100%;
-  height: 500px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: left;
   padding: 20px;
+}
+
+.carousel-right span {
+  color: #C80000;
 }
 
 .carousel-right-container {
@@ -283,8 +283,8 @@ nav a {
 
 .container {
   position: relative;
-  width: 80%; /* Adjust based on your layout */
-  height: 400px; /* Adjust based on your layout */
+  width: 80%;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -306,7 +306,7 @@ nav a {
   background-image: url(images/events-feast.jpg);
   background-size: cover;
   position: relative;
-  z-index: 1; /* Ensure it's below the black box */
+  z-index: 1;
   margin-right: 60px;
 }
 
@@ -315,7 +315,7 @@ nav a {
   background-image: url(images/events-night.jpg);
   background-size: cover;
   position: relative;
-  z-index: 1; /* Ensure it's below the black box */
+  z-index: 1;
 }
 
 .center {
@@ -341,12 +341,6 @@ nav a {
   margin-right: 10px;
 }
 
-
-
-
-
-
-
 /* reservations */
 #reservations {
   background-color: black;
@@ -354,6 +348,7 @@ nav a {
   display: flex;
   width: 100%;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .reservation-1 {
@@ -378,16 +373,6 @@ nav a {
 
 .reservation-2-content span {
   color: red;
-}
-
-.reservation-2-content button {
-  background-color: red;
-  color: whitesmoke;
-  margin-top: 25px;
-  border: none;
-  padding: 9px 15px;
-  border-radius: 20px;
-  font-size: 12px;
 }
 
 /* contact us */
@@ -435,6 +420,7 @@ nav a {
 .contactUs-info div {
   display: flex;
   align-items: center;
+  margin-bottom: 3px;
 }
 
 .contactUs-subscribe {
@@ -449,15 +435,6 @@ nav a {
   opacity: 0.3;
   border-radius: 20px;
   width: 110px;
-}
-
-.contactUs-subscribe button {
-  color: whitesmoke;
-  background-color: #C80000;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 20px;
-  margin-left: 5px;
 }
 
 .contactUs-footer {
@@ -479,68 +456,489 @@ hr {
 }
 
 /* media queries */
-@media (max-width: 1199px) {
-
-}
-
-@media (max-width: 991px) {
-
-}
-
-@media (max-width: 767px) {
-
-
-  header nav {
-    padding-right: 70px;
+@media (min-width: 1290px) {
+  h1 {
+    font-size: 49px;  
   }
 
-  #home {
+  h3, nav a {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 33px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 29px !important;
+  }
+
+  .button-red {
+    padding: 12px 19px;
+    font-size: 12px;
+  }
+  
+  /* home */
+  .home-button-2 {
+    background-color: transparent;
+    padding: 12px 19px;
+    font-size: 12px;
+  }
+
+  /* about us */
+  #aboutUs {
+    height: 95vh;
+  }
+
+  .aboutUs-1, .aboutUs-2 {
+    width: 50%;
+  }
+
+  .aboutUs-1-content-1 img {
+    height: 400px;
+    width: 340px;
+  }
+
+  .aboutUs-1-content-2 {
+    top: 93px;
+    left: 120px;
+  }
+
+  /* menu */
+
+  .carousel {
+    height: 490px;
+  }
+
+  .carousel-left {
+    width: 50%;
+  }
+
+  .carousel-right {
+    width: 50%;
+  }
+    
+  .carousel-left img {
+    width: 480px;
+    height: 460px;
+  }
+
+  .carousel-right-absolute-1 {
+    left: 0;
+    bottom: -237px;
+  }
+
+  .carousel-right-absolute-2 {
+    left: 280px;
+    bottom: -136px;
+  }
+
+  /* events */
+  .container {
+    height: 290px;
+  }
+
+  .box {
+    width: 500px;
+    height: 200px;
+    padding-top: 65px;
+    padding-left: 59px;
+  }
+
+  .center {
+    width: 500px;
+    height: 200px;
+  }
+
+  /* reservation */
+  #reservations {
+    height: 100vh;
+  }
+
+  .reservation-1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1289px){
+  
+  h1 {
+    font-size: 43px;  
+  }
+
+  h3, nav a {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 33px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 25px !important;
+  }
+
+  .button-red {
+    padding: 12px 19px;
+    font-size: 12px;
+  }
+  
+  /* home */
+  .home-button-2 {
+    background-color: transparent;
+    padding: 12px 19px;
+    font-size: 12px;
+  }
+
+  /* about us */
+  #aboutUs {
+    height: 95vh;
+  }
+
+  .aboutUs-1 {
+    width: 65%;
+  }
+
+  .aboutUs-1-content-1 img {
+    height: 380px;
+    width: 300px;
+  }
+
+  .aboutUs-1-content-2 {
+    top: 86px;
+    left: 70px;
+  }
+
+  /* menu */
+
+  .carousel {
+    height: 490px;
+  }
+
+  .carousel-left {
+    width: 45%;
+  }
+
+  .carousel-right {
+    width: 55%;
+  }
+    
+  .carousel-left img {
+    width: 355px;
+    height: 460px;
+    object-fit: cover;
+  }
+
+  .carousel-right-absolute-1 {
+    left: 0;
+    bottom: -237px;
+  }
+
+  .carousel-right-absolute-2 {
+    left: 230px;
+    bottom: -136px;
+  }
+
+  /* events */
+  .container {
+    height: 280px;
+  }
+
+  .box {
+    width: 450px;
+    height: 190px;
     padding-top: 60px;
+    padding-left: 55px;
   }
 
-  #home h1 {
-    margin-bottom: 30px;
-    font-size: 35px;
+  .center {
+    width: 450px;
+    height: 190px;
+  }
+
+  .carousel-button i {
+    font-size: 23px;
+    margin-left: 6px;
+  }
+
+  /* reservation */
+  #reservations {
+    height: 90vh;
+  }
+
+  .reservation-1 {
+    width: 95%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 990px){
+  
+  h1 {
+    font-size: 35px;  
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 22px !important;
+  }
+
+  .button-red {
+    padding: 10px 17px;
+    font-size: 9px;
+  }
+  
+  /* home */
+  .home-button-2 {
+    background-color: transparent;
+    padding: 8px 15px;
+    font-size: 9px;
+  }
+
+  /* about us */
+  #aboutUs {
+    height: 80vh;
+    padding: 20px;
+    padding-top: 50px;
+  }
+
+  .aboutUs-1 {
+    width: 50%;
+  }
+
+  .aboutUs-1-content-1 img {
+    height: 280px;
+    width: 240px;
+    object-fit: cover;
+  }
+
+  .aboutUs-1-content-2 {
+    top: 36px;
+    left: 70px;
+  }
+
+  /* menu */
+  #menu {
+    height: 100%;
+    padding-top: 80px;
+  }
+
+  .carousel {
+    height: 395px;
+  }
+
+  .carousel-left {
+    width: 50%;
+  }
+
+  .carousel-right {
+    width: 55%;
+  }
+    
+  .carousel-left img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .carousel-right-absolute-1 {
+    left: 0;
+    bottom: -190px;
+  }
+
+  .carousel-right-absolute-2 {
+    left: 200px;
+    bottom: -112px;
+  }
+
+  /* events */
+  .container {
+    height: 250px;
+  }
+
+  .box {
+    width: 450px;
+    height: 170px;
+    padding-top: 60px;
+    padding-left: 55px;
+  }
+
+  .center {
+    width: 450px;
+    height: 170px;
+  }
+
+  .carousel-button i {
+    font-size: 20px;
+    margin-left: 6px;
+  }
+
+  /* reservation */
+  .reservation-1 {
+    width: 110%;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 766px) {
+  header {
+    justify-content: center;
+    height: 50px;
+  }
+  
+  header div{
+    padding-left: 10px;
+  }
+  
+  header nav {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  h3, nav a {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  /* home */
+  #home {
+    height: 40vh;
   }
 
   h1 {
-    color: white;
-    font-family: "Playfair Display", serif;
-    font-weight: 900;
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 18px;
   }
 
   p {
     font-size: 10px;
-    line-height: 20px;
+    line-height: 20px !important;
   }
 
-  .home-button-1 {
-    background-color: #C80000;
-    padding: 10px 25px;
-    font-size: 8px;
+  .button-red {
+    padding: 6px 13px;
+    font-size: 7px;
   }
   
   .home-button-2 {
     background-color: transparent;
-    padding: 8px 13px;
-    font-size: 8px;
+    padding: 6px 10px;
+    font-size: 7px;
   }
 
-  .aboutUs-1-content-1 img {
-    height: 250px;
-    width: 200px;
-    object-fit: cover;
+  /* about us */
+  #aboutUs {
+    height: 60vh;
+    padding: 20px;
+    padding-top: 50px;
   }
 
   .aboutUs-1 {
-    width: 80%;
-    padding: 5px;
-    margin-right: 60px;
+    width: 50%;
+    justify-content: right;
+    padding: 80px;
   }
-}
+  
+  .aboutUs-1-content {
+    padding: 50px;
+  }
 
-@media (max-width: 575px) {
+  .aboutUs-1-content-1 img {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+  }
 
+  .aboutUs-1-content-2 {
+    top: 30px;
+    left: 70px;
+  }
+
+  /* menu */
+  #menu {
+    height: 100%;
+    padding-top: 80px;
+  }
+
+  .carousel {
+    height: 350px;
+  }
+
+  .carousel-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .carousel-right {
+    width: 50%;
+  }
+    
+  .carousel-left img {
+    width: 200px;
+  }
+
+  .carousel-right-absolute-1 {
+    left: 0;
+    bottom: -170px;
+  }
+
+  .carousel-right-absolute-2 {
+    left: 150px;
+    bottom: -98px;
+  }
+
+  /* events */
+  #events {
+    height: 70vh;
+  }
+
+  .box {
+    width: 200px;
+    height: 130px;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .center {
+    width: 250px;
+    height: 130px;
+  }
+
+  .carousel-button i {
+    font-size: 15px;
+    margin-left: 6px;
+  }
+
+  /* reservations */
+  #reservations {
+    height: 50vh;
+  }
+
+  .reservation-1 {
+    width: 120%;
+  }
+
+  /* contact us */
+  #contactUs {
+    padding: 40px;
+  }
+
+  .contactUs-subscribe input {
+    padding: 7px 7px;
+    width: 50px;
+    font-size: 8px;
+  }
+
+  .contactUs-info i {
+    height: 3px;
+    width: 4px;
+    font-size: 5px;
+    margin-right: 5px;
+  }
 }
