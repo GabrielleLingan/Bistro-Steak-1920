@@ -117,6 +117,10 @@ nav a {
   color: #C80000;
 }
 
+#home-button-container {
+  margin-top: 40px;
+}
+
 .button-red {
   color: whitesmoke;
   background-color: #C80000;
@@ -142,18 +146,17 @@ nav a {
   display: flex;
   color: white;
   padding-top: 70px;
-  padding-bottom: 80px;
+  padding-bottom: 150px;
+}
+
+#aboutUs-container {
+  display: flex;
 }
 
 .aboutUs-1 {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 80px;
-}
-
-.aboutUs-1-content {
-  padding: 70px;
 }
 
 .aboutUs-1-content-1 {
@@ -279,6 +282,7 @@ nav a {
   flex-direction: column;
   padding-top: 100px;
   align-items: center;
+  height: 100%;
 }
 
 .container {
@@ -457,6 +461,10 @@ hr {
 
 /* media queries */
 @media (min-width: 1290px) {
+  header {
+    background-color: #C80000;
+  }
+
   h1 {
     font-size: 49px;  
   }
@@ -480,6 +488,7 @@ hr {
   }
   
   /* home */
+
   .home-button-2 {
     background-color: transparent;
     padding: 12px 19px;
@@ -488,7 +497,7 @@ hr {
 
   /* about us */
   #aboutUs {
-    height: 95vh;
+    height: 100%;
   }
 
   .aboutUs-1, .aboutUs-2 {
@@ -562,7 +571,7 @@ hr {
 }
 
 @media (min-width: 991px) and (max-width: 1289px){
-  
+
   h1 {
     font-size: 43px;  
   }
@@ -594,11 +603,11 @@ hr {
 
   /* about us */
   #aboutUs {
-    height: 95vh;
+    height: 100%;
   }
 
   .aboutUs-1 {
-    width: 65%;
+    width: 100%;
   }
 
   .aboutUs-1-content-1 img {
@@ -698,24 +707,31 @@ hr {
 
   /* about us */
   #aboutUs {
-    height: 80vh;
-    padding: 20px;
-    padding-top: 50px;
+    height: 100%;
+    padding: 80px;
+    padding-top: 100px;
   }
 
   .aboutUs-1 {
-    width: 50%;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .aboutUs-2 {
+    width: 100%;
+    margin-left: 90px;
   }
 
   .aboutUs-1-content-1 img {
-    height: 280px;
-    width: 240px;
+    height: 370px;
+    width: 230px;
     object-fit: cover;
   }
 
   .aboutUs-1-content-2 {
-    top: 36px;
-    left: 70px;
+    top: 50px;
+    left: 130px;
   }
 
   /* menu */
@@ -729,11 +745,11 @@ hr {
   }
 
   .carousel-left {
-    width: 50%;
+    width: 100%;
   }
 
   .carousel-right {
-    width: 55%;
+    width: 100%;
   }
     
   .carousel-left img {
@@ -832,7 +848,7 @@ hr {
 
   /* about us */
   #aboutUs {
-    height: 60vh;
+    height: 100%;
     padding: 20px;
     padding-top: 50px;
   }
@@ -869,14 +885,20 @@ hr {
   }
 
   .carousel-left {
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
+  .carousel-left img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+  }
+
   .carousel-right {
-    width: 50%;
+    width: 75%;
   }
     
   .carousel-left img {
@@ -895,7 +917,11 @@ hr {
 
   /* events */
   #events {
-    height: 70vh;
+    height: 100%;
+  }
+
+  .container {
+    height: 170px;
   }
 
   .box {
@@ -940,5 +966,148 @@ hr {
     width: 4px;
     font-size: 5px;
     margin-right: 5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 8px;
+    line-height: 9px !important;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    padding: 10px;
+  }
+
+  header div {
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 90%;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 7px;
+  }
+
+  .home-container {
+    padding-left: 20px;
+  }
+
+  #home-button-container {
+    margin-top: 15px;
+  }
+
+  .button-red {
+    color: whitesmoke;
+    background-color: #C80000;
+    border: none;
+    padding: 7px 12px;
+    margin-right: 30px;
+    font-size: 5px;
+    margin: 0;
+  }
+
+  .home-button-2 {
+    padding: 7px 12px;
+    font-size: 5px;
+    margin-left: 10px;
+    margin: 0;
+  }
+
+  /* home */
+  #home {
+    height: 10vh;
+    padding-top: 100px;
+    padding: 25px;
+  }
+
+  
+  #home::before {
+    height: 100%;
+  }
+
+  /* about us */
+  #aboutUs {
+    padding: 30px;
+  }
+
+  .aboutUs-1 {
+    background-color: lightblue;
+    width: 15%;
+    justify-content: right;
+    padding: 50px;
+  }
+
+  .aboutUs-2 {
+    width: 95%;
+    background-color: lightcoral;
+  }
+  
+  .aboutUs-1-content {
+    padding: 0px;
+  }
+
+  .aboutUs-1-content-1 img {
+    height: 140px;
+    width: 100px;
+  }
+
+  .aboutUs-1-content-2 {
+    top: 30px;
+    left: 40px;
+  }
+
+  /* menu */
+  #menu {
+    height: 100%;
+    padding-top: 80px;
+  }
+
+  .carousel {
+    height: 320px;
+  }
+
+  .carousel-left {
+    background-color: lightblue;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .carousel-left img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .carousel-right {
+    background-color: lightcoral;
+    width: 75%;
+  }
+
+  .carousel-right-absolute-1 {
+    left: 0;
+    bottom: -170px;
+  }
+
+  .carousel-right-absolute-2 {
+    left: 150px;
+    bottom: -98px;
   }
 }
