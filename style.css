@@ -461,7 +461,6 @@ hr {
 
 /* media queries */
 @media (min-width: 1290px) {
-
   h1 {
     font-size: 49px;  
   }
@@ -851,11 +850,11 @@ hr {
   }
 
   .aboutUs-1 {
-    width: 50%;
+    width: 100%;
     justify-content: right;
     padding: 80px;
   }
-  
+
   .aboutUs-1-content {
     padding: 50px;
   }
@@ -971,9 +970,13 @@ hr {
     font-size: 16px;
     margin: 0;
   }
+
+  h2 {
+    font-size: 16px;
+  }
   
   p {
-    font-size: 8px;
+    font-size: 5px;
     line-height: 9px !important;
   }
 
@@ -1032,8 +1035,7 @@ hr {
     padding-top: 100px;
     padding: 25px;
   }
-
-  
+ 
   #home::before {
     height: 100%;
   }
@@ -1044,15 +1046,15 @@ hr {
   }
 
   .aboutUs-1 {
-    background-color: lightblue;
-    width: 15%;
+    width: 60%;
+    display: flex;
     justify-content: right;
-    padding: 50px;
+    justify-content: right;
+    padding: 20px 30px 10px 20px;
   }
 
   .aboutUs-2 {
-    width: 95%;
-    background-color: lightcoral;
+    width: 100%;
   }
   
   .aboutUs-1-content {
@@ -1066,7 +1068,7 @@ hr {
 
   .aboutUs-1-content-2 {
     top: 30px;
-    left: 40px;
+    left: 30px;
   }
 
   /* menu */
@@ -1076,35 +1078,86 @@ hr {
   }
 
   .carousel {
-    height: 320px;
+    height: 200px;
   }
 
   .carousel-left {
-    background-color: lightblue;
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
   .carousel-left img {
-    width: 200px;
+    width: 150px;
     height: 200px;
     object-fit: cover;
   }
 
   .carousel-right {
-    background-color: lightcoral;
-    width: 75%;
+    width: 50%;
+    padding: 8px;
+    height: 185px;
   }
 
   .carousel-right-absolute-1 {
     left: 0;
-    bottom: -170px;
+    bottom: -80px;
   }
 
   .carousel-right-absolute-2 {
-    left: 150px;
-    bottom: -98px;
+    left: 80px;
+    bottom: -50px;
+  }
+
+  /* events */
+  #events {
+    height: 100%;
+  }
+
+  .container {
+    height: 110px;
+  }
+
+  .box {
+    width: 190px;
+    height: 90px;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .center {
+    width: 190px;
+    height: 90px;
+  }
+
+  .carousel-button i {
+    font-size: 15px;
+    margin-left: 6px;
+  }
+
+  /* contact us */
+  .contactUs-navigation {
+    margin-left: 10px;
+  }
+
+  .contactUs-subscribe input {
+    padding: 7px 12px;
+    opacity: 0.3;
+    border-radius: 20px;
+    width: 40px;
+    font-size: 7px;
+    margin: 0;
+  }
+
+  .contactUs-info i {
+    border: 1px solid hsl(0, 100%, 39%);
+    background-color: #C80000;
+    padding: 3px;
+    border-radius: 20px;
+    height: 4px;
+    width: 5px;
+    font-size: 5px;
+    margin-right: 6px;
   }
 }
