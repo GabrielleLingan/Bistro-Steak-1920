@@ -461,9 +461,6 @@ hr {
 
 /* media queries */
 @media (min-width: 1290px) {
-  header {
-    background-color: #C80000;
-  }
 
   h1 {
     font-size: 49px;  
