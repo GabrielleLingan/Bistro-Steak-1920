@@ -3,169 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bistro Steak 1920</title>
+  <title>Recreate Copy</title>
+
   <link rel="stylesheet" href="style.css">
+  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
+  <!-- icons -->
   <script src="https://kit.fontawesome.com/3c936c0b7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!--header-->
   <header>
-    <div>
-      <h3>Steak <span>Bistro</span></h3>
+    <div class="wrapper" id="header">
+      <div>
+        <h4>Steak<span class="red-under">Bistro</span></h4>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#events">Events</p>
+        <a href="#reservations">Reservations</a>
+        <a href="#contact-us" class="button-red">Contact Us</a>
+      </nav>
     </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#aboutUs">About Us</a>
-      <a href="#menu">Menu</a>
-      <a href="#events">Events</a>
-      <a href="#reservations">Reservations</a>
-      <a href="#contactUs" class="button-red">Contact Us</a>
-    </nav>
   </header>
 
-  <main>
-    <article id="home">
-      <div class="home-container">
-        <div>
-          <p style="margin-left: 25px;">Welcome to Steak Bistro</p>
-          <h1>Enjoy <span>Delicious Steaks<br></span> and Filipino Dishes</h1>
-        </div>
-        <div id="home-button-container">
-          <button class="button-red">Reserve Your Table</button>
-          <button class="home-button-2 montserrat">View Our Menu</button>
-        </div>
-      </div> 
-    </article>
+  <!--home-->
+  <article id="home">
+    <div class="wrapper">
+      <p class="p-header">Welcome to Steak Bistro</p>
+      <h1>Enjoy <span>Delicious Steaks </span><br>and Filipino Dishes</h1>
+      <div class="home-button-container">
+        <button class="button-red">Reserve Your Table</button>
+        <button class="button-white">View Our Menu</button>
+      </div>
+    </div>
+  </article>
 
-    <!-- about us -->
-    <article id="aboutUs">
-      <div id="aboutUs-container">
-        <div class="aboutUs-1">
-          <div class="aboutUs-1-content-1">
-            <img src="images/aboutUs-1.jpg">
-            <div class="aboutUs-1-content-2">
-              <img src="images/aboutUs-2.jpg">
-            </div>
+  <!--about us-->
+  <article id="about-us">
+    <div class="wrapper">
+      <div class="about-us-container">
+        <div class="about-us-content-left">
+          <img src="images/aboutus-top.png">
+          <div class="overlap-img">
+            <img src="images/aboutus-bottom.png">
           </div>
         </div>
-        <div class="aboutUs-2">
-          <div class="aboutUs-2-content">
-            <p>Our Story</p>
-            <h1><span>Where Flavor<br></span> Meets Passion</h1>
-            <p>Welcome to Steak Bistro! We are a cozy and friendly restaurant in the heart of Cabuyao, Laguna, Philippines. Our chefs are passionate about food and love to mix classic steaks with the rich flavors of Filipino cuisine. Whether you’re here for a quick lunch, a family dinner, or a special occasion, we promise a great meal and warm hospitality.</p>
-            <br>
-            <button class="button-red">Discover More Delight</button>
-          </div>
+        <div class="about-us-content-right">
+          <p class="p-header">Our Story</p>
+          <h2>Where Flavor <br><span>Meets Passion</span></h2>
+          <p>Welcome to Steak Bistro! We are a cozy and friendly restaurant in the heart of Cabuyao, Laguna, Philippines. Our chefs are passionate about food and love to mix classic steaks with the rich flavors of Filipino cuisine. Whether you’re here for a quick lunch, a family dinner, or a special occasion, we promise a great meal and warm hospitality.</p>
+          <button class="button-red">Discover More Delight</button>
         </div>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <!-- menu -->
-    <article id="menu">
-      <div class="menu-content-top">
-        <p>Explore Our Menu</p>
-        <h1>Indulge in Our<br><span>Culinary Creations</span></h1>
+  <!--menu-->
+  <article id="menu">
+    <div class="wrapper">
+      <div class="div-center">
+        <p class="p-header">Explore Our Menu</p>
+        <h2>Indulge in Our<br><span>Culinary Creations</span></h2>
         <p>Steak Bistro is where exceptional flavors and a warm, inviting<br> atmosphere come together to create the perfect dining experience.</p>
       </div>
-      <div class="carousel">
-          <div class="carousel-left">
-            <img src="images/menu-1.JPG">
+
+      <div class="menu-content">
+        <div class="menu-starters-left">
+          <img src="images/menu-center.png">
+        </div>
+        <div class="menu-starters-right">
+          <h3>A Selection of <br>Delicious Starters</h3>
+          <div class="starter-1">
+            <p class="red-text">Fresh Lumpia: </p>
+            <p>A refreshing Filipino spring roll<br>filled with crisp vegetables,<br> noodles, and savory meat, served<br> with a sweet peanut sauce.</p>
           </div>
-          <div class="carousel-right">
-            <h2>A Selection of <br><span>Delicious Starters</span></h2>
-            <div class="carousel-right-container">
-              <div class="carousel-right-content">
-                <p class="red">Fresh Lumpia: </p>
-                <p>A refreshing Filipino spring roll<br> filled with crisp vegetables,<br> noodles, and savory meat, served<br> with a sweet peanut sauce.</p>
-              </div>
-              <div>
-                <div class="carousel-right-absolute-1">
-                  <p class="red">Ensaymada:</p>
-                  <p>A sweet, fluffy Filipino pastry<br> topped with sugar, grated<br> cheese, and butter, offering a<br> deliciously rich, comforting treat.</p>
-                </div>
-                <div class="carousel-right-absolute-2">
-                  <p class="red">Sinigang Soup: </p>
-                  <p>A tangy and savory Filipino soup<br> made with tamarind, tender<br> meat, and fresh vegetables,<br> delivering a bold, comforting<br> flavor.</p>
-                </div>
-            </div>
+          <div class="bg-1">
+            <img src="images/1.png">
           </div>
+          <div class="starter-2">
+            <p class="red-text">Sinigang Soup: </p>
+            <p>A tangy and savory Filipino soup<br> made with tamarind, tender<br> meat, and fresh vegetables,<br> delivering a bold, comforting<br> flavor.</p>
+          </div>
+          <div class="bg-2">
+            <img src="images/2.png">
+          </div>
+          <div class="starter-3">
+            <p class="red-text">Ensaymada: </p>
+            <p>A sweet, fluffy Filipino pastry<br> topped with sugar, grated<br> cheese, and butter, offering a<br> deliciously rich, comforting treat.</p>
+          </div>
+          <div class="bg-3">
+            <img src="images/3.png">
+          </div>
+        </div>
       </div>
-      </div>
-      
+
       <div class="carousel-button">
-        <i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: #ff0000;"></i>
+        <i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: #C80000;"></i>
         <i class="fa-solid fa-arrow-right" style="color: whitesmoke;"></i>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <!-- events -->
-    <article id="events">
-      <div class="events-content-top">
-        <p>Join Our Events</p>
-        <h1>Enjoy <span>Fun and Exciting</span><br> Events at Steak Bistro!</h1>
+  <!--events-->
+  <article id="events">
+    <article class="wrapper center">
+
+      <div class="div-center">
+        <p class="p-header">Join Our Events</p>
+        <h2>Enjoy <span>Fun and Exciting</span><br>Events at Steak Bistro!</h2>
         <p>Check out our calendar for upcoming events and special nights.</p>
       </div>
 
-      <div class="container">
-        <div class="box left">
-          <h2>A Feast of <br><span>Flavor Await</span></h2>
-          <p>All-you-can-eat Filipino dishes for<br>special occassions</p>
+      <div class="events-content-container">     
+        <div class="events-content-left box">
+          <h3>A Selection of<br><span>Boodle Foods</span></h3>
+          <p>A traditional Filipino feast served on<br> banana leaves, perfect for sharing.</p>
           <div class="view">
-            <p id="red">View More</p>
-            <i class="fa-solid fa-arrow-left fa-flip-horizontal" style="color: #ff0000;"></i>
+            <p>View More</p>
+            <i class="fa-solid fa-arrow-right" style="color: #C80000;"></i>
           </div>
         </div>
-        <div class="box right">
-          <h2>Unforgettable <br><span>Karaoke Nights</span></h2>
-          <p>Sing your heart out with friends <br>and family.</p>
+        <div class="events-content-right box">
+          <h3>A Selection of<br><span>Boodle Foods</span></h3>
+          <p>A traditional Filipino feast served on<br> banana leaves, perfect for sharing.</p>
           <div class="view">
-            <p id="red">View More</p>
-            <i class="fa-solid fa-arrow-left fa-flip-horizontal" style="color: #ff0000;"></i>
+            <p>View More</p>
+            <i class="fa-solid fa-arrow-right" style="color: #C80000;"></i>
           </div>
         </div>
-        <div class="box center">
-          <h2>A Selection of <br><span>Boodle Foods</span></h2>
-          <p>A traditional Filipino feast served on <br>banana leaves, perfect for sharing.</p>
+        <div class="events-content-center box">
+          <h3>A Selection of<br><span>Boodle Foods</span></h3>
+          <p>A traditional Filipino feast served on<br> banana leaves, perfect for sharing.</p>
           <div class="view">
-            <p id="red">View More</p>
-            <i class="fa-solid fa-arrow-left fa-flip-horizontal" style="color: #C80000;"></i>
+            <p>View More</p>
+            <i class="fa-solid fa-arrow-right" style="color: #C80000;"></i>
           </div>
         </div>
       </div>
-      
+
       <div class="carousel-button">
         <i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: #C80000;"></i>
         <i class="fa-solid fa-arrow-right" style="color: whitesmoke;"></i>
       </div>
 
-    
     </article>
+  </article>
 
-    <!-- reservations -->
-    <article id="reservations">
-      <div class="reservation-1">
-
-      </div>
-      <div class="reservation-2">
-        <div class="reservation-2-content">
-          <p class="montserrat">Dining Awaits</p>
-          <h1><span>Your Perfect Dining<br></span> Experience Starts Here</h1>
-          <button class="button-red">Discover More Delight</button>
+  <!--reservations-->
+  <article id="reservations">
+    <div class="wrapper">
+      <div class="reservation-content">
+        <div>
+          
         </div>
-      </div>
-    </article>
-  
+        <div>
+          <p class="p-header">Dining Awaits</p>
+          <h2><span>Your Perfect Dining</span><br>Experience Starts Here</h2>
+          <button class="button-red" style="  margin-top: 60px;">Discover More Delight</button>
+        </div>
+      </div>   
+    </div>
+  </article>
 
-    <!-- contact us -->
-    <footer id="contactUs">
-      <h3>Steak <span>Bistro</span></h3>
-      <div class="contactUs-content">
-        <p>At Steak Bistro, we’re passionate about delivering an exceptional dining experience. From our perfectly cooked steaks to our warm and welcoming ambiance, every visit is designed to delight your senses.</p>
+  <!--contact us-->
+  <footer id="contact-us">
+    <div class="wrapper">
+      <h4>Steak <span class="red-under">Bistro</span></h4>
+      <div class="contact-us-content">
+        <div>
+          <p>At Steak Bistro, we’re passionate about delivering an exceptional dining experience. From our perfectly cooked steaks to our warm and welcoming ambiance, every visit is designed to delight your senses.</p>
+        </div>
         <div class="contactUs-navigation">
-          <p class="contactUs-title">Navigator</p>
+          <p class="p-white-header">Navigator</p>
           <p>Home</p>
           <p>About Us</p>
           <p>Menu</p>
@@ -173,22 +187,22 @@
           <p>Reservations</p>
         </div>
         <div class="contactUs-info">
-          <p class="contactUs-title">Contact Us</p>
-          <div>
+          <p class="p-white-header">Contact Us</p>
+          <div class="div-inline">
             <i class="fa-solid fa-phone" style="color: #000000;"></i>
             <p>0917-123-4567</p>
           </div>
-          <div>
+          <div class="div-inline">
             <i class="fa-solid fa-envelope" style="color: #000000;"></i>
             <p>steakbistro@restaurant.ph</p>
           </div>
-          <div>
+          <div class="div-inline">
             <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
             <p>930 Mamatid rd, [Cabuyao City, Laguna, Philippines,]</p>
           </div>
         </div>
         <div class="contactUs-subscribe">
-          <p class="contactUs-title">Subscribe to Our Newsletter</p>
+          <p class="p-white-header">Subscribe to Our Newsletter</p>
           <div>
             <input type="text" placeholder="Email">
             <button class="button-red">Submit</button>
@@ -200,7 +214,7 @@
         <p>&#169; 2025 Steak Bistro. All Rights Reserved</p>
         <p>Privacy Policy | Terms & Conditions | Cookie Policy</p>
       </div>
-    </footer>
-  </main>
+    </div>
+  </footer>
 </body>
 </html>
